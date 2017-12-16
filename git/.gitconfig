@@ -5,8 +5,8 @@
     ap = add --patch
     br = branch --all --verbose --verbose
     ca = commit --amend
-    dc = diff --cached
     di = diff
+    ds = diff --staged
     dw = diff --word-diff
     lo = log --all --decorate --graph --oneline
     ls = log --all --decorate --graph --oneline --simplify-by-decoration
