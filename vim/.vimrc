@@ -10,10 +10,12 @@ syntax on
 
 " indentation
 filetype indent plugin on
-set tabstop=4
 set expandtab
 set shiftwidth=4
 set softtabstop=4
+set tabstop=4
+" yaml: indentation with 2 spaces
+autocmd Filetype yaml setlocal shiftwidth=2 softtabstop=2 tabstop=2
 
 
 " status line
