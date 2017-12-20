@@ -16,6 +16,8 @@ set softtabstop=4
 set tabstop=4
 " yaml: indentation with 2 spaces
 autocmd Filetype yaml setlocal shiftwidth=2 softtabstop=2 tabstop=2
+" html: indentation with 2 spaces
+autocmd Filetype html setlocal shiftwidth=1 softtabstop=1 tabstop=1
 
 
 " status line
