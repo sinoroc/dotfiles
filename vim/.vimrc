@@ -3,6 +3,7 @@
 
 " general
 set colorcolumn=80
+set cursorline
 set nowrap
 set scrolloff=3
 syntax on
