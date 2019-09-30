@@ -15,10 +15,10 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
-" yaml: indentation with 2 spaces
-autocmd Filetype yaml setlocal shiftwidth=2 softtabstop=2 tabstop=2
 " html: indentation with 1 space
 autocmd Filetype html setlocal shiftwidth=1 softtabstop=1 tabstop=1
+" yaml: indentation with 2 spaces
+autocmd Filetype yaml setlocal shiftwidth=2 softtabstop=2 tabstop=2
 
 
 " status line
