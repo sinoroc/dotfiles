@@ -1,4 +1,4 @@
-# .gitconfig
+#
 
 
 [alias]
@@ -13,6 +13,10 @@
     re = remote --verbose
     ru = remote --verbose update
     st = status --branch --short
+
+[user]
+    email = sinoroc.code+git@gmail.com
+    name = sinoroc
 
 
 # EOF
