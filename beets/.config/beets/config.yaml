@@ -1,0 +1,25 @@
+---
+
+
+plugins: convert discogs mbsync missing scrub
+
+directory: ~/Music/beets
+
+asciify_paths: yes
+
+import:
+  copy: yes
+  move: no
+
+paths:
+  default: "$albumartist/[$original_year] $album/$track $title"
+
+convert:
+  copy_album_art: yes
+  dest: /tmp
+  never_convert_lossy_files: yes
+  no_convert: format:FLAC
+  threads: 1
+
+
+...
