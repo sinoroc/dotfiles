@@ -6,7 +6,6 @@ set colorcolumn=80
 set cursorline
 set nowrap
 set scrolloff=3
-syntax on
 
 
 " indentation
@@ -33,6 +32,11 @@ set ignorecase
 set smartcase
 set incsearch
 set hlsearch
+
+
+" syntax
+syntax on
+highlight Comment cterm=italic
 
 
 " color scheme
