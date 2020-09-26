@@ -10,6 +10,7 @@
     dw = diff --word-diff
     lo = log --all --decorate --graph --oneline
     ls = log --all --decorate --graph --oneline --simplify-by-decoration
+    lt = tag --list -n
     re = remote --verbose
     ru = remote --verbose update
     st = status --branch --short
