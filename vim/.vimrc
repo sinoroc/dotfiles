@@ -2,10 +2,16 @@
 
 
 " general
-set colorcolumn=80
 set cursorline
-set nowrap
 set scrolloff=3
+
+
+" line breaks
+set colorcolumn=80
+set linebreak
+set nolist
+set showbreak=…
+set wrap
 
 
 " indentation
