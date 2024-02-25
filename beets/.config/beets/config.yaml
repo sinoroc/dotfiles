@@ -16,7 +16,7 @@ paths:
 
 convert:
   copy_album_art: yes
-  dest: /tmp
+  dest: /tmp/beets-convert
   never_convert_lossy_files: yes
   no_convert: format:FLAC
   threads: 1
