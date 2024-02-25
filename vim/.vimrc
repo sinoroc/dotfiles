@@ -22,6 +22,8 @@ set softtabstop=4
 set tabstop=4
 " html: indentation with 1 space
 autocmd Filetype html setlocal shiftwidth=1 softtabstop=1 tabstop=1
+" javascript: indentation with 2 spaces
+autocmd Filetype javascript setlocal shiftwidth=2 softtabstop=2 tabstop=2
 " json: indentation with 2 spaces
 autocmd Filetype json setlocal shiftwidth=2 softtabstop=2 tabstop=2
 " xml: indentation with 1 space
