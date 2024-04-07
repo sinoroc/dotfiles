@@ -50,10 +50,10 @@ highlight Comment cterm=italic
 
 
 " color scheme
-set t_Co=256
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
+try
+    colorscheme solarized
+catch
+endtry
 
 
 " ALE
