@@ -8,6 +8,7 @@
     di = diff
     ds = diff --staged
     dw = diff --word-diff
+    gr = grep --break --heading --line-number
     lo = log --all --decorate --graph --oneline
     ls = log --all --decorate --graph --oneline --simplify-by-decoration
     lt = tag --list -n
