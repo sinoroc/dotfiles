@@ -15,6 +15,9 @@
     ru = remote --verbose update
     st = status --branch --short
 
+[init]
+	defaultBranch = main
+
 [user]
     email = sinoroc.code+git@gmail.com
     name = sinoroc
