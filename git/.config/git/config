@@ -13,7 +13,7 @@
     ls = log --all --decorate --graph --oneline --simplify-by-decoration
     lt = tag --list -n
     re = remote --verbose
-    ru = remote --verbose update
+    ru = remote --verbose update --prune
     st = status --branch --short
 
 [init]
