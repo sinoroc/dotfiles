@@ -44,24 +44,6 @@ set incsearch
 set hlsearch
 
 
-" syntax
-syntax on
-
-
-" highlights
-function! Highlight() abort
-    highlight Comment cterm=italic
-endfunction
-autocmd ColorScheme * call Highlight()
-
-
-" color scheme
-try
-    colorscheme solarized
-catch
-endtry
-
-
 " ALE
 let g:ale_completion_enabled = 1
 let g:ale_echo_msg_error_str = 'E'
@@ -76,6 +58,24 @@ try
     packadd! ale
 catch
 endtry
+
+
+" color scheme
+try
+    colorscheme solarized
+catch
+endtry
+
+
+" highlights
+function! Highlight() abort
+    highlight Comment cterm=italic
+endfunction
+autocmd ColorScheme * call Highlight()
+
+
+" syntax
+syntax on
 
 
 " EOF
