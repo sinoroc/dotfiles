@@ -46,7 +46,13 @@ set hlsearch
 
 " syntax
 syntax on
-highlight Comment cterm=italic
+
+
+" highlights
+function! Highlight() abort
+    highlight Comment cterm=italic
+endfunction
+autocmd ColorScheme * call Highlight()
 
 
 " color scheme
