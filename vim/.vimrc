@@ -1,6 +1,12 @@
 " .vimrc
 
 
+" undercurl
+" This can help make undercurls work (Gnome Terminal, Ptyxis)
+let &t_Cs = "\e[4:3m"
+let &t_Ce = "\e[4:0m"
+
+
 " general
 set cursorline
 set scrolloff=3
