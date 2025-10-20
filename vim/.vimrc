@@ -12,6 +12,10 @@ set cursorline
 set scrolloff=3
 
 
+" columns
+set signcolumn=yes
+
+
 " line breaks
 set colorcolumn=80
 set linebreak
@@ -71,6 +75,9 @@ let g:ale_python_pylsp_config =  {
 \        },
 \    },
 \}
+let g:ale_sign_error = 'x'
+let g:ale_sign_warning = '.'
+let g:ale_virtualtext_cursor = 'current'
 try
     packadd! ale
 catch
@@ -87,6 +94,11 @@ endtry
 " highlights
 function! Highlight() abort
     highlight Comment cterm=italic
+    highlight! link SignColumn LineNr
+    highlight link ALEErrorSign SignColumn
+    highlight link ALEWarningSign SignColumn
+    highlight link ALEVirtualTextError Comment
+    highlight link ALEVirtualTextWarning Comment
 endfunction
 autocmd ColorScheme * call Highlight()
 
