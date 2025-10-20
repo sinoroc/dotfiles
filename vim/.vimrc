@@ -57,9 +57,20 @@ let g:ale_echo_msg_format = '[%severity%][%linter%]%[code]% %s'
 let g:ale_echo_msg_info_str = 'I'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_fix_on_save = 1
-let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace'], 'python': ['isort', 'yapf']}
-let g:ale_linters = {'python': ['mypy', 'pycodestyle', 'pydocstyle', 'pylint', 'pyls']}
-let g:ale_python_pyls_executable = 'pylsp'
+let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace']}
+let g:ale_linters = {'python': ['pylsp']}
+let g:ale_python_pylsp_config =  {
+\    'pylsp': {
+\        'plugins': {
+\            'rope_autoimport': {
+\                'enabled': v:true,
+\            },
+\            'rope_completion': {
+\                'enabled': v:false,
+\            },
+\        },
+\    },
+\}
 try
     packadd! ale
 catch
